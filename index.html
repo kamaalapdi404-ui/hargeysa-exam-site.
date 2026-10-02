@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hargeysa Examination Results | Nidaamka Rasmiga ah ee Hubinta Natiijooyinka</title>
+  <meta name="description" content="Nidaamka Rasmiga ah ee Hubinta Natiijooyinka Imtixaanaadka Hargeysa. Angaaga ka raadi natiijada fasalka 8aad iyo 12aad ee Gobolka Maroodi-Jeex." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="liquid-theme">
+  <!-- Background Animated Liquid Ambient Blobs -->
+  <div class="liquid-bg-wrapper" aria-hidden="true">
+    <div class="liquid-blob blob-1"></div>
+    <div class="liquid-blob blob-2"></div>
+    <div class="liquid-blob blob-3"></div>
+    <div class="liquid-blob blob-4"></div>
+    <div class="liquid-grid-overlay"></div>
+  </div>
+
+  <!-- Announcement / Top Bar -->
+  <header class="top-announcement-bar">
+    <div class="container top-bar-content">
+      <div class="announcement-left">
+        <span class="pulse-badge"><i class="fa-solid fa-circle font-pulse"></i> Ogeysiis Moobayl</span>
+        <p class="announcement-text" id="top-announcement-text">
+          Natiijooyinka Imtixaanka Fasalka 8aad iyo 12aad ee Sanad Dugsiyadeedka 2024/2025 waa la soo saaray!
+        </p>
+      </div>
+      <div class="announcement-right">
+        <span class="support-contact"><i class="fa-solid fa-phone"></i> Taageerada: 0638742888 / 0634990451</span>
+        <div class="lang-selector">
+          <span class="lang-active"><i class="fa-solid fa-globe"></i> SO</span>
+          <span class="lang-opt">EN</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-navbar" id="main-navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand" onclick="app.showPage('home'); return false;">
+        <div class="brand-logo-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Hargeysa Examination Results</span>
+          <span class="brand-subtitle">Hubinta Natiijada Imtixaanka Dowladda</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#search-section" class="nav-link active" onclick="app.scrollToSection('search-section')"><i class="fa-solid fa-magnifying-glass"></i> Natiijooyinka</a></li>
+        <li><a href="#stats-section" class="nav-link" onclick="app.scrollToSection('stats-section')"><i class="fa-solid fa-chart-pie"></i> Xogta Imtixaanka</a></li>
+        <li><a href="#honor-roll-section" class="nav-link" onclick="app.scrollToSection('honor-roll-section')"><i class="fa-solid fa-trophy"></i> Ugu Sarreeyaasha</a></li>
+        <li><a href="#services-section" class="nav-link" onclick="app.scrollToSection('services-section')"><i class="fa-solid fa-shield-halved"></i> Adeegyada & Taageerada</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="glass-btn glass-btn-primary" onclick="app.scrollToSection('search-section')">
+          <i class="fa-solid fa-magnifying-glass-location"></i> Raadi Natiijada
+        </button>
+        <button class="glass-btn glass-btn-admin" id="admin-access-btn" onclick="app.openAdminModal()">
+          <i class="fa-solid fa-user-gear"></i> Portal-ka Admin-ka
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" onclick="app.toggleMobileMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="main-content">
+    
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-badge-pill">
+          <i class="fa-solid fa-certificate"></i> IMTIXAANKA FASALKA 8AAD IYO 12AAD / 2024 / 2025
+        </div>
+
+        <h1 class="hero-title">
+          Nidaamka Rasmiga ah ee <br/>
+          <span class="gradient-text-liquid">Hubinta Natiijooyinka</span> Imtixaanaadka Hargeysa
+        </h1>
+
+        <p class="hero-subtitle">
+          Portal-ka rasmiga ah ee natiijooyinka imtixaanka dugsiyada dhex iyo sare (Fasalka 8aad iyo 12aad) ee Gobolka Maroodi-Jeex oo dhan adoo adeegsanaya lambarkaaga fadhiga (Roll Number).
+        </p>
+
+        <!-- SEARCH FORM CARD (LIQUID GLASS) -->
+        <div class="search-glass-card" id="search-section">
+          <div class="card-header-glass">
+            <div class="header-icon-box">
+              <i class="fa-solid fa-id-card"></i>
+            </div>
+            <div class="header-text-box">
+              <h3>Foomka Raadinta Natiijada Ardayga</h3>
+              <p>Geli koodhka fadhiga si aad u hesho kaadhka rasmiga ah ee natiijada</p>
+            </div>
+            <div class="header-pill-info">
+              <i class="fa-solid fa-lock"></i> Koodh-ka Waafaqsan Wasaaradda
+            </div>
+          </div>
+
+          <form id="result-search-form" onsubmit="app.handleSearch(event)">
+            <div class="search-form-grid">
+              
+              <!-- Roll Number -->
+              <div class="form-group form-group-full">
+                <label for="roll-number-input">
+                  <i class="fa-solid fa-barcode"></i> GELI LAMBARKA FADHIGA / ROLL NUMBER <span class="required">*</span>
+                </label>
+                <div class="input-with-button">
+                  <input 
+                    type="text" 
+                    id="roll-number-input" 
+                    class="glass-input" 
+                    placeholder="Tusaale: HRG-84920-24 ama HRG-11001-24" 
+                    required 
+                    autocomplete="off"
+                  />
+                  <button type="button" class="quick-fill-btn" onclick="app.fillSampleRoll()" title="Adeegso Nambar Tusaale ah">
+                    <i class="fa-solid fa-bolt"></i> Tusaale Quick
+                  </button>
+                </div>
+                <div class="quick-samples-list">
+                  <span>Tusaalayaal la diyaariyay:</span>
+                  <button type="button" class="sample-chip" onclick="app.searchByRoll('HRG-84920-24')">HRG-84920-24 (Cabdiraxmaan)</button>
+                  <button type="button" class="sample-chip" onclick="app.searchByRoll('HRG-11001-24')">HRG-11001-24 (Khadra)</button>
+                  <button type="button" class="sample-chip" onclick="app.searchByRoll('HRG-12901-24')">HRG-12901-24 (Maxamed)</button>
+                </div>
+              </div>
+
+              <!-- Exam Grade / Level -->
+              <div class="form-group">
+                <label for="exam-level-select">
+                  <i class="fa-solid fa-layer-group"></i> OGAADA DUGSIGA IYO IMTIXAANKA <span class="required">*</span>
+                </label>
+                <select id="exam-level-select" class="glass-select">
+                  <option value="ALL">Dhammaan Heerarka (Fasalka 8aad & 12aad)</option>
+                  <option value="Fasalka 8aad">Fasalka 8aad - Dugsiga Dhexe</option>
+                  <option value="Fasalka 12aad">Fasalka 12aad - Dugsiga Sare</option>
+                </select>
+              </div>
+
+              <!-- Academic Year -->
+              <div class="form-group">
+                <label for="academic-year-select">
+                  <i class="fa-solid fa-calendar-days"></i> SANADKA DUGSI IYO WAXBARASHO <span class="required">*</span>
+                </label>
+                <select id="academic-year-select" class="glass-select">
+                  <option value="2024-2025">Sanadka 2024 - 2025 (Official)</option>
+                  <option value="2023-2024">Sanadka 2023 - 2024</option>
+                  <option value="2022-2023">Sanadka 2022 - 2023</option>
+                </select>
+              </div>
+
+              <!-- Region / Location -->
+              <div class="form-group form-group-full">
+                <label for="region-select">
+                  <i class="fa-solid fa-location-dot"></i> GOBOLKA IMTIXAANKA IYO MAGAALADA
+                </label>
+                <select id="region-select" class="glass-select">
+                  <option value="Maroodi-Jeex">Dhammaan Dugsiyada Maroodi-Jeex (Hargeysa)</option>
+                  <option value="Togdheer">Gobolka Togdheer (Burao)</option>
+                  <option value="Awdal">Gobolka Awdal (Borama)</option>
+                  <option value="Sanaag">Gobolka Sanaag (Erigavo)</option>
+                  <option value="Sool">Gobolka Sool (Las Anod)</option>
+                  <option value="Sahil">Gobolka Sahil (Berbera)</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Action submit -->
+            <div class="search-form-footer">
+              <span class="security-note">
+                <i class="fa-solid fa-shield-check"></i> Xogta natiijooyinku waxay ka imanayaan Nidaamka Dexam ee Gobolka Maroodi-Jeex.
+              </span>
+              <button type="submit" class="glass-btn glass-btn-submit" id="search-submit-btn">
+                <i class="fa-solid fa-magnifying-glass font-bounce"></i> Raadi Natiijada Fadhiga
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESULT SLIP SECTION (DISPLAYED UPON SEARCH OR DIRECT SELECTION) -->
+    <section class="result-slip-section hidden" id="result-slip-section">
+      <div class="container">
+        
+        <div class="result-slip-header-action">
+          <button class="glass-btn glass-btn-back" onclick="app.hideResultSlip()">
+            <i class="fa-solid fa-arrow-left"></i> Ku Laabto Raadinta
+          </button>
+          <div class="result-slip-badge">
+            <i class="fa-solid fa-circle-check"></i> Kaadhka Rasmiga ah ee Hubinta (Verified Official Result)
+          </div>
+        </div>
+
+        <!-- MAIN DYNAMIC RESULT SLIP CARD -->
+        <div class="result-slip-card glass-card-elevated" id="official-slip-card">
+          
+          <div class="slip-top-banner">
+            <div class="slip-watermark">HARGEYSA EXAMS</div>
+            <div class="slip-title-container">
+              <h2>KAADHKA NATIIJADA ARDAYGA (OFFICIAL RESULT SLIP)</h2>
+              <p>Nidaamka Hubinta Imtixaanaadka Dowladda ee Gobolka Maroodi-Jeex</p>
+            </div>
+            <div class="slip-status-tag" id="slip-status-tag">
+              <i class="fa-solid fa-circle-check"></i> <span id="slip-status-text">GUULAYSTAY (PASS)</span>
+            </div>
+          </div>
+
+          <!-- Student Profile Grid -->
+          <div class="student-profile-bar">
+            <div class="student-avatar-box">
+              <div class="student-avatar-inner" id="student-avatar-display">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
+            </div>
+
+            <div class="student-info-main">
+              <h3 class="student-name" id="slip-student-name">Cabdiraxmaan Maxamed Cumar</h3>
+              <div class="student-meta-list">
+                <span class="meta-item"><strong>ROLL:</strong> <span id="slip-roll-number">HRG-84920-24</span></span>
+                <span class="meta-divider">â€¢</span>
+                <span class="meta-item"><strong>DUGSIGA:</strong> <span id="slip-school-name">Dugsiga Sare ee Gaandi - Hargeysa</span></span>
+              </div>
+              <div class="student-meta-list mt-1">
+                <span class="meta-item"><strong>HERKA:</strong> <span id="slip-grade-level">Fasalka 8aad (2024/2025)</span></span>
+                <span class="meta-divider">â€¢</span>
+                <span class="meta-item"><strong>SANADKA:</strong> <span id="slip-academic-year">2024-2025</span></span>
+              </div>
+            </div>
+
+            <div class="student-score-badge">
+              <div class="score-circle">
+                <span class="score-num" id="slip-percentage">90.2%</span>
+                <span class="score-label">BOQOLKIBA (SCORE)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Overview Cards inside Slip -->
+          <div class="slip-stats-grid">
+            <div class="slip-stat-card">
+              <span class="stat-lbl">DARAJA DA GUUD</span>
+              <span class="stat-val gradient-text-purple" id="slip-grade-letter">Hoor Sare (A)</span>
+            </div>
+            <div class="slip-stat-card">
+              <span class="stat-lbl">WADARTA DHIBC AHA</span>
+              <span class="stat-val" id="slip-total-marks">812 / 900</span>
+            </div>
+            <div class="slip-stat-card">
+              <span class="stat-lbl">KAALMADA GOBOLKA</span>
+              <span class="stat-val gradient-text-gold" id="slip-rank-position">Kaalmada 2aad</span>
+            </div>
+            <div class="slip-stat-card">
+              <span class="stat-lbl">GOBOLKA & DAGMADA</span>
+              <span class="stat-val" id="slip-location">Maroodi-Jeex (Hargeysa)</span>
+            </div>
+          </div>
+
+          <!-- SUBJECT BREAKDOWN TABLE -->
+          <div class="subject-table-container">
+            <div class="table-caption-bar">
+              <h4><i class="fa-solid fa-list-check"></i> TAFAASIILTA MAADOOYINKA & SHIIDKA DARAJAADKA (SUBJECT BREAKDOWN)</h4>
+              <span>Imtixaanka Ugu Danbeeyay</span>
+            </div>
+
+            <table class="glass-table" id="subject-marks-table">
+              <thead>
+                <tr>
+                  <th>MAADDA (SUBJECT)</th>
+                  <th class="text-center">QADARKA SARE</th>
+                  <th class="text-center">QADARKA HELAY</th>
+                  <th class="text-center">DARAJAAD</th>
+                  <th class="text-center">KOOSKA / STATUS</th>
+                </tr>
+              </thead>
+              <tbody id="subject-marks-tbody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- VERIFICATION STAMP & ACTION FOOTER -->
+          <div class="slip-verification-footer">
+            <div class="verification-stamp-box">
+              <div class="qr-code-holder" id="qr-code-holder">
+                <!-- Dynamic QR SVG -->
+              </div>
+              <div class="stamp-details">
+                <h5><i class="fa-solid fa-shield-halved"></i> Kaadhka Dhaqangal (Digital Stamp Verification)</h5>
+                <p class="security-hash">Verification Code: <strong id="slip-security-hash">HRG-84920-24-SEC-REG</strong></p>
+                <p class="stamp-sub">Diiwaangelinta Natiijada ee Gobolka Maroodi-Jeex, Hargeysa Somaliland</p>
+              </div>
+            </div>
+
+            <div class="slip-action-buttons">
+              <button class="glass-btn glass-btn-secondary" onclick="app.printResultSlip()">
+                <i class="fa-solid fa-print"></i> Print Official Slip
+              </button>
+              <button class="glass-btn glass-btn-primary" onclick="app.downloadResultPDF()">
+                <i class="fa-solid fa-file-pdf"></i> Soo Dajiso PDF
+              </button>
+              <button class="glass-btn glass-btn-icon" onclick="app.shareResult()" title="La Wadaag">
+                <i class="fa-solid fa-share-nodes"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OVERALL EXAM STATISTICS SECTION -->
+    <section class="stats-overview-section" id="stats-section">
+      <div class="container">
+        
+        <div class="section-title-wrapper text-center">
+          <span class="section-tag-pill"><i class="fa-solid fa-chart-simple"></i> XOGTA DHIBC AHAAN IYO WAXBARASHO</span>
+          <h2>Xogta Guud ee Imtixaanaadka Hargeysa</h2>
+          <p>Feerko guud oo ku saabsan dhammaan natiijooyinka imtixaanaadka ee fasallada 8aad iyo 12aad ee la soo saaray.</p>
+        </div>
+
+        <div class="stats-cards-grid">
+          
+          <div class="glass-stat-box">
+            <div class="stat-icon-wrapper icon-purple">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="stat-box-info">
+              <span class="stat-number" id="stat-total-students">18,450+</span>
+              <span class="stat-title">Arday Fadhiisatay</span>
+              <p class="stat-desc">Wadarta guud ee ardayda fasalka 8aad iyo 12aad ee u fadhiisatay imtixaanka.</p>
+            </div>
+          </div>
+
+          <div class="glass-stat-box">
+            <div class="stat-icon-wrapper icon-emerald">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="stat-box-info">
+              <span class="stat-number" id="stat-pass-rate">91.4%</span>
+              <span class="stat-title">Boqolkiiba Gudubka</span>
+              <p class="stat-desc">Boqolkiiba ardayda u guuleysatay inay gudbaan imtixaanka dowladda.</p>
+            </div>
+          </div>
+
+          <div class="glass-stat-box">
+            <div class="stat-icon-wrapper icon-cyan">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="stat-box-info">
+              <span class="stat-number" id="stat-total-schools">142</span>
+              <span class="stat-title">Dugsiyo & Xarumo</span>
+              <p class="stat-desc">Sumadda dugsiyada dhex iyo sare ee ka qaybgalay imtixaanka ee gobolka.</p>
+            </div>
+          </div>
+
+          <div class="glass-stat-box">
+            <div class="stat-icon-wrapper icon-gold">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="stat-box-info">
+              <span class="stat-number" id="stat-top-students">1,240+</span>
+              <span class="stat-title">Ardayda Darajada A</span>
+              <p class="stat-desc">Ardayda heshay darajada ugu sarreysa ee A iyo A+ dhammaan maadooyinka.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TOP HONOR ROLL SECTION -->
+    <section class="honor-roll-section" id="honor-roll-section">
+      <div class="container">
+        
+        <div class="section-title-wrapper text-center">
+          <span class="section-tag-pill"><i class="fa-solid fa-crown"></i> REER HARTEEYA TOP HONOR ROLL</span>
+          <h2>Ardayda Ugu Sarreysa Imtixaanka (Top Honor Roll)</h2>
+          <p>Liska 5-ta arday ee ugu sarreysa guud ahaan imtixaanaadka ee sanad dugsiyadeedka 2024/2025.</p>
+        </div>
+
+        <div class="honor-roll-controls">
+          <div class="glass-segmented-control">
+            <button class="segmented-btn active" onclick="app.filterHonorRoll('ALL', this)">Dhammaan Heerarka</button>
+            <button class="segmented-btn" onclick="app.filterHonorRoll('Fasalka 8aad', this)">Fasalka 8aad</button>
+            <button class="segmented-btn" onclick="app.filterHonorRoll('Fasalka 12aad', this)">Fasalka 12aad</button>
+          </div>
+        </div>
+
+        <div class="honor-roll-card glass-card-elevated">
+          <div class="table-responsive">
+            <table class="glass-table honor-table">
+              <thead>
+                <tr>
+                  <th class="text-center">KAALMADA</th>
+                  <th>MAGACA ARDAYGA</th>
+                  <th>DUGSIGA / SKOOLKA</th>
+                  <th class="text-center">ROLL NUMBER</th>
+                  <th class="text-center">WADARTA GUUD</th>
+                  <th class="text-center">BOQOLKIIBA</th>
+                  <th class="text-center">GEEDI-SOCOD</th>
+                </tr>
+              </thead>
+              <tbody id="honor-roll-tbody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GUIDANCE & SERVICES SECTION -->
+    <section class="services-section" id="services-section">
+      <div class="container">
+        
+        <div class="section-title-wrapper text-center">
+          <span class="section-tag-pill"><i class="fa-solid fa-hand-holding-hand"></i> TAAGEERADA & WADASHAQEYNTA</span>
+          <h2>Hanuuninta Ardayda & Waalidiinta</h2>
+          <p>Waxaad halkaan ka helaysaa adeegyada muhiimka ah ee ku saabsan nidaamka raadinta natiijada iyo saxitaanka.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card glass-card-hover">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h3>Habka Geedi-socodka (Appeals Process)</h3>
+            <p>Miyaad u malaynaysaa in darajadaada wax ka dhiman yihiin? Waxaad gudbin kartaa foomka cabashada ama re-checking natiijada 14 maalmood gudahood.</p>
+            <button class="service-link-btn" onclick="app.openAppealModal()">
+              Gudbi Dhibco Cabasho <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card glass-card-hover">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <h3>Shahaadooyinka Aadkis-in (Hardcopy)</h3>
+            <p>Eega shahaadooyinka rasmiga ah oo ku saabsan dugsiyada dhex iyo sare. Shahaadada dhijitaalka ah iyo midka hardcopy ka ee Wasaaradda.</p>
+            <button class="service-link-btn" onclick="app.openCertificateModal()">
+              Aadkis-in Shahaadooyinka <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card glass-card-hover">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h3>Xafiisyada & Taageerada Gobolka</h3>
+            <p>Wixii faahfaahin ah ama taageero toos ah oo ku saabsan Dexam Gobolka Maroodi-Jeex, nagala soo xiriir xafiisyada dhexe ama khadka taleefanka.</p>
+            <button class="service-link-btn" onclick="app.openContactModal()">
+              Nala Soo Xiriir <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Hargeysa Examination Results</span>
+          </div>
+          <p class="footer-desc">
+            Nidaamka Rasmiga ah ee Hubinta Natiijooyinka Imtixaanaadka Dowladda ee Fasallada 8aad iyo 12aad ee Dugsiyada Gobolka Maroodi-Jeex, Hargeysa Somaliland.
+          </p>
+          <p class="footer-location"><i class="fa-solid fa-location-dot"></i> Hargeysa, Gobolka Maroodi-Jeex, Somaliland</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>SHAHADO & NATIIJO</h4>
+          <ul>
+            <li><a href="#" onclick="app.scrollToSection('search-section')">Raadi Natiijada Fadhiga</a></li>
+            <li><a href="#" onclick="app.scrollToSection('honor-roll-section')">Ardayda Ugu Sarreysa</a></li>
+            <li><a href="#" onclick="app.openAppealModal()">Geedi-socodka Cabashada</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>MATAANAH & AADMAA</h4>
+          <ul>
+            <li><a href="#" onclick="app.openAdminModal()">Portal-ka Maamulka Admin-ka</a></li>
+            <li><a href="#" onclick="app.openCertificateModal()">Xaqiijinta Shahaadada</a></li>
+            <li><a href="#" onclick="app.openContactModal()">Xafiiska Taageerada</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>Â© 2024 - 2025 Nidaamka Rasmiga ah ee Imtixaanaadka Hargeysa. Dhammaan xuquuqdu waa ilaashan yihiin.</p>
+        <p class="footer-system-code">Portal Version: V2.50.2025 â€¢ Secured with Dexam & SSL</p>
+      </div>
+
+      <!-- DEVELOPER CREDIT -->
+      <div class="footer-developer">
+        <div class="developer-card">
+          <div class="developer-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="developer-info">
+            <span class="developer-label">Nidaamkan waxaa Sameeyay</span>
+            <span class="developer-name">Kamaal Cabdirizzaq Maxamed</span>
+            <div class="developer-contacts">
+              <a href="tel:0638742888" class="developer-contact-link"><i class="fa-solid fa-phone"></i> 0638742888</a>
+              <span class="dev-divider">•</span>
+              <a href="tel:0634990451" class="developer-contact-link"><i class="fa-solid fa-phone"></i> 0634990451</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. ADMIN DASHBOARD MODAL -->
+  <div class="modal-overlay hidden" id="admin-modal-overlay">
+    <div class="modal-card modal-xl glass-modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fa-solid fa-user-shield gradient-text-purple"></i>
+          <div>
+            <h3>Maamulka Portal-ka Imtixaanka (Admin Dashboard)</h3>
+            <p>Maamulka natiijooyinka, ardayda, cabashooyinka, iyo tafaasiisha nidaamka</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="app.closeAdminModal()">&times;</button>
+      </div>
+
+      <div class="modal-body p-0">
+        
+        <!-- Admin Login Screen (if not logged in) -->
+        <div class="admin-login-view" id="admin-login-view">
+          <div class="login-box glass-card-elevated">
+            <div class="login-icon">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <h4>Galitaanka Maamulaha (Admin Login)</h4>
+            <p>Fadlan geli furaha sirta ah (Password) si aad u gashid maamulka.</p>
+
+            <form onsubmit="app.handleAdminLogin(event)" class="mt-3">
+              <div class="form-group">
+                <label for="admin-pass-input">Furaha Sirta (Password):</label>
+                <input type="password" id="admin-pass-input" class="glass-input" placeholder="Geli password-ka sireed" required autocomplete="current-password" />
+              </div>
+              <button type="submit" class="glass-btn glass-btn-primary w-100 mt-2">
+                <i class="fa-solid fa-right-to-bracket"></i> Soo Gal Admin-ka
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Admin Main Content (Shown after auth) -->
+        <div class="admin-dashboard-view hidden" id="admin-dashboard-view">
+          
+          <!-- Admin Sidebar Navigation -->
+          <div class="admin-layout">
+            <aside class="admin-sidebar">
+              <div class="admin-sidebar-menu">
+                <button class="admin-tab-btn active" onclick="app.switchAdminTab('students', this)">
+                  <i class="fa-solid fa-user-graduate"></i> Ardayda & Natiijooyinka
+                </button>
+                <button class="admin-tab-btn" onclick="app.switchAdminTab('add-student', this)">
+                  <i class="fa-solid fa-user-plus"></i> Ku Add Arday Mp3/New
+                </button>
+                <button class="admin-tab-btn" onclick="app.switchAdminTab('appeals', this)">
+                  <i class="fa-solid fa-scale-balanced"></i> Cabashooyinka (<span id="admin-appeals-count">0</span>)
+                </button>
+                <button class="admin-tab-btn" onclick="app.switchAdminTab('stats', this)">
+                  <i class="fa-solid fa-chart-column"></i> Xogta & Tirooyinka
+                </button>
+                <button class="admin-tab-btn" onclick="app.switchAdminTab('settings', this)">
+                  <i class="fa-solid fa-sliders"></i> Qaanuunka & Settings
+                </button>
+              </div>
+              <div class="admin-sidebar-footer">
+                <button class="glass-btn glass-btn-danger w-100" onclick="app.adminLogout()">
+                  <i class="fa-solid fa-power-off"></i> Ka Bax Admin
+                </button>
+              </div>
+            </aside>
+
+            <!-- Admin Main Tab Panels -->
+            <main class="admin-content-area">
+              
+              <!-- TAB 1: STUDENTS & RESULTS -->
+              <div class="admin-tab-panel active" id="tab-panel-students">
+                <div class="panel-header">
+                  <div>
+                    <h4>Diiwaanka Ardayda iyo Natiijooyinka</h4>
+                    <p>Ka raadi, wax ka baddal ama tirtir natiijooyinka ardayda dhiibay</p>
+                  </div>
+                  <div class="panel-actions">
+                    <button class="glass-btn glass-btn-primary" onclick="app.switchAdminTab('add-student')">
+                      <i class="fa-solid fa-plus"></i> Ku Dhiib Arday Cusub
+                    </button>
+                    <button class="glass-btn glass-btn-secondary" onclick="app.resetDataToDefaults()">
+                      <i class="fa-solid fa-rotate-left"></i> Reset Sample Data
+                    </button>
+                  </div>
+                </div>
+
+                <div class="admin-filter-bar">
+                  <input type="text" id="admin-student-search" class="glass-input" placeholder="Raadi Magaca, Roll Number ama Dugsiga..." oninput="app.renderAdminStudentsTable()" />
+                  <select id="admin-grade-filter" class="glass-select" onchange="app.renderAdminStudentsTable()">
+                    <option value="ALL">Dhammaan Fasallada</option>
+                    <option value="Fasalka 8aad">Fasalka 8aad</option>
+                    <option value="Fasalka 12aad">Fasalka 12aad</option>
+                  </select>
+                </div>
+
+                <div class="table-responsive mt-3">
+                  <table class="glass-table admin-table">
+                    <thead>
+                      <tr>
+                        <th>ROLL NO</th>
+                        <th>MAGACA ARDAYGA</th>
+                        <th>DUGSIGA</th>
+                        <th>HEERKA</th>
+                        <th class="text-center">WADARTA</th>
+                        <th class="text-center">BOQOLKIBA</th>
+                        <th class="text-center">HAWLAHA (ACTIONS)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="admin-students-tbody">
+                      <!-- Dynamic rows -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- TAB 2: ADD / EDIT STUDENT -->
+              <div class="admin-tab-panel" id="tab-panel-add-student">
+                <div class="panel-header">
+                  <h4 id="admin-form-title">Diiwaangeli Arday Cusub</h4>
+                  <button class="glass-btn glass-btn-secondary" onclick="app.clearStudentForm()">
+                    <i class="fa-solid fa-broom"></i> Nadiifi Foomka
+                  </button>
+                </div>
+
+                <form id="admin-student-form" onsubmit="app.handleSaveStudent(event)" class="mt-3">
+                  <input type="hidden" id="form-student-id" value="" />
+                  
+                  <div class="form-grid-3">
+                    <div class="form-group">
+                      <label>Roll Number (Koodhka Fadhiga) <span class="required">*</span></label>
+                      <input type="text" id="form-roll-number" class="glass-input" placeholder="e.g. HRG-84920-24" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Magaca Ardayga oo Dhammaystiran <span class="required">*</span></label>
+                      <input type="text" id="form-student-name" class="glass-input" placeholder="e.g. Axmed Cali Maxamed" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Magaca Dugsiga / Skoolka <span class="required">*</span></label>
+                      <input type="text" id="form-school-name" class="glass-input" placeholder="e.g. Dugsiga Sare ee Nuuradiin" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Heerka Imtixaanka <span class="required">*</span></label>
+                      <select id="form-grade-level" class="glass-select">
+                        <option value="Fasalka 8aad">Fasalka 8aad (Grade 8)</option>
+                        <option value="Fasalka 12aad">Fasalka 12aad (Form 4)</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Sanad Dugsiyadeedka <span class="required">*</span></label>
+                      <input type="text" id="form-academic-year" class="glass-input" value="2024-2025" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Gobolka / Magaalada</label>
+                      <input type="text" id="form-location" class="glass-input" value="Maroodi-Jeex (Hargeysa)" required />
+                    </div>
+                  </div>
+
+                  <h5 class="mt-4 mb-2"><i class="fa-solid fa-pen-ruler"></i> Natiijooyinka Maadooyinka (Max 100 per Subject)</h5>
+                  <div class="subject-inputs-grid" id="form-subjects-container">
+                    <!-- Subject dynamic inputs -->
+                  </div>
+
+                  <div class="form-actions-bar mt-4">
+                    <button type="submit" class="glass-btn glass-btn-primary">
+                      <i class="fa-solid fa-floppy-disk"></i> Kaydi Natiijada Ardayga
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- TAB 3: APPEALS -->
+              <div class="admin-tab-panel" id="tab-panel-appeals">
+                <div class="panel-header">
+                  <h4>Diiwaanka Cabashooyinka (Student Appeals)</h4>
+                  <p>Halkaan ka maamul cabashooyinka ardaydu ka soo gudbiyeen natiijada</p>
+                </div>
+
+                <div class="table-responsive mt-3">
+                  <table class="glass-table admin-table">
+                    <thead>
+                      <tr>
+                        <th>TARIIKHA</th>
+                        <th>ROLL NUMBER</th>
+                        <th>MAGACA</th>
+                        <th>MAADDA</th>
+                        <th>SABABTA / REASON</th>
+                        <th class="text-center">STATUS</th>
+                        <th class="text-center">HAWLAHA</th>
+                      </tr>
+                    </thead>
+                    <tbody id="admin-appeals-tbody">
+                      <!-- Dynamic appeals -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- TAB 4: STATS & OVERVIEW -->
+              <div class="admin-tab-panel" id="tab-panel-stats">
+                <div class="panel-header">
+                  <h4>Xogta & Tirooyinka Nidaamka</h4>
+                </div>
+                <div class="admin-stats-summary-grid mt-3" id="admin-stats-summary-container">
+                  <!-- Stats generated dynamically -->
+                </div>
+              </div>
+
+              <!-- TAB 5: SETTINGS -->
+              <div class="admin-tab-panel" id="tab-panel-settings">
+                <div class="panel-header">
+                  <h4>Qaanuunka Portal-ka & Ogeysiisyada</h4>
+                </div>
+
+                <form onsubmit="app.handleSaveSettings(event)" class="mt-3">
+                  <div class="form-group">
+                    <label>Qoraalka Ogeysiiska Dusha Sare (Top Announcement):</label>
+                    <input type="text" id="setting-announcement" class="glass-input" value="Natiijooyinka Imtixaanka Fasalka 8aad iyo 12aad ee Sanad Dugsiyadeedka 2024/2025 waa la soo saaray!" />
+                  </div>
+
+                  <div class="form-group mt-3">
+                    <label>Magaca Portal-ka Rasmiga ah:</label>
+                    <input type="text" id="setting-portal-title" class="glass-input" value="Hargeysa Examination Results" />
+                  </div>
+
+                  <button type="submit" class="glass-btn glass-btn-primary mt-3">
+                    <i class="fa-solid fa-floppy-disk"></i> Kaydi Settings-ka
+                  </button>
+                </form>
+              </div>
+
+            </main>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. APPEAL MODAL -->
+  <div class="modal-overlay hidden" id="appeal-modal-overlay">
+    <div class="modal-card glass-modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fa-solid fa-scale-balanced gradient-text-purple"></i>
+          <div>
+            <h3>Foomka Cabashada Natiijada (Appeal Form)</h3>
+            <p>Soo gudbi dhibco dib-u-angaynta maadooyinka imtixaanka</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="app.closeAppealModal()">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="app.handleAppealSubmit(event)">
+          <div class="form-group">
+            <label>Lambarka Fadhiga (Roll Number) <span class="required">*</span></label>
+            <input type="text" id="appeal-roll-input" class="glass-input" placeholder="e.g. HRG-84920-24" required />
+          </div>
+
+          <div class="form-group mt-2">
+            <label>Magacaaga oo Dhammaystiran <span class="required">*</span></label>
+            <input type="text" id="appeal-name-input" class="glass-input" placeholder="Magaca ardayga" required />
+          </div>
+
+          <div class="form-group mt-2">
+            <label>Maadda aad ka cabanayso <span class="required">*</span></label>
+            <select id="appeal-subject-select" class="glass-select" required>
+              <option value="Basic Mathematics">Basic Mathematics</option>
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Biology">Biology</option>
+              <option value="Af-Somali">Af-Somali</option>
+              <option value="English">English</option>
+              <option value="Islamic Studies">Islamic Studies</option>
+              <option value="Geography & History">Geography & History</option>
+            </select>
+          </div>
+
+          <div class="form-group mt-2">
+            <label>Tafaasiisha Cabashadaada / Sababta <span class="required">*</span></label>
+            <textarea id="appeal-reason-input" class="glass-textarea" rows="3" placeholder="Fadlan qhoo sababta aad u cabanayso..." required></textarea>
+          </div>
+
+          <div class="modal-footer mt-3 p-0">
+            <button type="submit" class="glass-btn glass-btn-primary w-100">
+              <i class="fa-solid fa-paper-plane"></i> Gudbi Cabashada Natiijada
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. CERTIFICATE / GENERIC MODAL -->
+  <div class="modal-overlay hidden" id="info-modal-overlay">
+    <div class="modal-card glass-modal">
+      <div class="modal-header">
+        <div class="modal-title" id="info-modal-title">
+          <i class="fa-solid fa-circle-info gradient-text-purple"></i>
+          <h3>Macluumaad</h3>
+        </div>
+        <button class="modal-close-btn" onclick="app.closeInfoModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="info-modal-body">
+        <!-- Dynamic message -->
+      </div>
+      <div class="modal-footer">
+        <button class="glass-btn glass-btn-secondary" onclick="app.closeInfoModal()">Ilaawi / OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION SYSTEM -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
